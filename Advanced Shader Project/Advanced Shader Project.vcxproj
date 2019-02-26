@@ -155,11 +155,17 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\GLAD\src\glad.c" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stdafx.h" />
     <ClInclude Include="include\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\firstShader.frag" />
+    <None Include="shaders\firstShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
