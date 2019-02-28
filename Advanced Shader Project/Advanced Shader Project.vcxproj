@@ -166,8 +166,8 @@
     <ClInclude Include="include\targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\firstShader.frag" />
-    <None Include="shaders\firstShader.vert" />
+    <None Include="resources\shaders\firstShader.frag" />
+    <None Include="resources\shaders\firstShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

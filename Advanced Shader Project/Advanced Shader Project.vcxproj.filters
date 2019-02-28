@@ -49,10 +49,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders\firstShader.frag">
+    <None Include="resources\shaders\firstShader.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="shaders\firstShader.vert">
+    <None Include="resources\shaders\firstShader.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>
