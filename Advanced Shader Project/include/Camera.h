@@ -39,6 +39,7 @@ public:
 	void ProcessMouseScroll(float yoffset);
 	//Return the FOV of the Camera
 	float getFOV();
+	glm::vec3 getPosition();
 
 private:
 	// Camera Attributes

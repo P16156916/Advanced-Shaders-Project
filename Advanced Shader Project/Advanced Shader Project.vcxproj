@@ -168,6 +168,8 @@
     <ClInclude Include="include\targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\shaders\basicLighting.frag" />
+    <None Include="resources\shaders\basicLighting.vert" />
     <None Include="resources\shaders\Colours.frag" />
     <None Include="resources\shaders\Colours.vert" />
     <None Include="resources\shaders\firstShader.frag" />

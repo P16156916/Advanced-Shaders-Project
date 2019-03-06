@@ -73,5 +73,11 @@
     <None Include="resources\shaders\Lamp.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
+    <None Include="resources\shaders\basicLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\basicLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

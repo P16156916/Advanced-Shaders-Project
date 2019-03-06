@@ -67,6 +67,11 @@ float Camera::getFOV()
 	return Zoom;
 }
 
+glm::vec3 Camera::getPosition()
+{
+	return Position;
+}
+
 void Camera::updateCameraVectors()
 {
 	// Calculate the new Front vector
