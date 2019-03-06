@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>include;..\..\..\GLAD\include;..\..\..\GLFW\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\..\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <IncludePath>include;..\..\GLAD\include;..\..\GLFW\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <SourcePath>src;$(SourcePath)</SourcePath>
     <IntDir>temp\$(Configuration)\</IntDir>
@@ -153,13 +153,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\GLAD\src\glad.c" />
+    <ClCompile Include="..\..\GLAD\src\glad.c" />
+    <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="include\stdafx.h" />
