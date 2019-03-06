@@ -1,20 +1,15 @@
 #include "Camera.h"
 
-Camera::Camera(glm::vec3 position, glm::vec3 up, float yaw, float pitch)
+Camera::Camera(glm::vec3 p_vPosition, glm::vec3 p_vUp)
 {
-	Position = position;
-	WorldUp = up;
-	Yaw = yaw;
-	Pitch = pitch;
-	updateCameraVectors();
-}
-
-Camera::Camera(float posX, float posY, float posZ, float upX, float upY, float upZ, float yaw, float pitch)
-{
-	Position = glm::vec3(posX, posY, posZ);
-	WorldUp = glm::vec3(upX, upY, upZ);
-	Yaw = yaw;
-	Pitch = pitch;
+	Position = p_vPosition;
+	WorldUp = p_vUp;
+	Yaw = YAW;
+	Pitch = PITCH;
+	Front = glm::vec3(0.f, 0.f, -1.f);
+	MovementSpeed = SPEED;
+	MouseSensitivity = SENSITIVITY;
+	Zoom = ZOOM;
 	updateCameraVectors();
 }
 
@@ -65,6 +60,11 @@ void Camera::ProcessMouseScroll(float yoffset)
 		Zoom = 1.0f;
 	if (Zoom >= 45.0f)
 		Zoom = 45.0f;
+}
+
+float Camera::getFOV()
+{
+	return Zoom;
 }
 
 void Camera::updateCameraVectors()
