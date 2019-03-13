@@ -180,8 +180,12 @@
     <None Include="resources\shaders\Lamp.vert" />
     <None Include="resources\shaders\materialLighting.frag" />
     <None Include="resources\shaders\materialLighting.vert" />
+    <None Include="resources\shaders\multipleLighting.frag" />
+    <None Include="resources\shaders\multipleLighting.vert" />
     <None Include="resources\shaders\pointLighting.frag" />
     <None Include="resources\shaders\pointLighting.vert" />
+    <None Include="resources\shaders\spotLighting.frag" />
+    <None Include="resources\shaders\spotLighting.vert" />
     <None Include="resources\shaders\textureLighting.frag" />
     <None Include="resources\shaders\textureLighting.vert" />
   </ItemGroup>

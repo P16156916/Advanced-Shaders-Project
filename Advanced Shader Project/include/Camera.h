@@ -40,6 +40,7 @@ public:
 	//Return the FOV of the Camera
 	float getFOV();
 	glm::vec3 getPosition();
+	glm::vec3 getFrontVector();
 
 private:
 	// Camera Attributes

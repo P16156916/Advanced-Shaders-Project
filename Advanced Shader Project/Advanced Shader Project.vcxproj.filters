@@ -103,5 +103,17 @@
     <None Include="resources\shaders\pointLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
+    <None Include="resources\shaders\spotLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\spotLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\multipleLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\multipleLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
