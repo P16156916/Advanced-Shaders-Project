@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\assimp-4.1.0\include\assimp;include;..\..\GLAD\include;..\..\GLFW\include\;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\assimp-4.1.0\include\;include;..\..\GLAD\include;..\..\GLFW\include\;$(IncludePath)</IncludePath>
     <LibraryPath>lib;..\..\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <SourcePath>src;$(SourcePath)</SourcePath>
@@ -99,7 +99,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -154,18 +154,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\GLAD\src\glad.c" />
+    <ClCompile Include="src\Bitmap.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\Model.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
+    <ClCompile Include="src\vbocube.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Bitmap.h" />
     <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\Mesh.h" />
+    <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stb_image.h" />
     <ClInclude Include="include\stdafx.h" />
     <ClInclude Include="include\targetver.h" />
+    <ClInclude Include="include\vbocube.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\shaders\basicLighting.frag" />
@@ -180,10 +188,14 @@
     <None Include="resources\shaders\Lamp.vert" />
     <None Include="resources\shaders\materialLighting.frag" />
     <None Include="resources\shaders\materialLighting.vert" />
+    <None Include="resources\shaders\model.frag" />
+    <None Include="resources\shaders\model.vert" />
     <None Include="resources\shaders\multipleLighting.frag" />
     <None Include="resources\shaders\multipleLighting.vert" />
     <None Include="resources\shaders\pointLighting.frag" />
     <None Include="resources\shaders\pointLighting.vert" />
+    <None Include="resources\shaders\sky.frag" />
+    <None Include="resources\shaders\sky.vert" />
     <None Include="resources\shaders\spotLighting.frag" />
     <None Include="resources\shaders\spotLighting.vert" />
     <None Include="resources\shaders\textureLighting.frag" />
