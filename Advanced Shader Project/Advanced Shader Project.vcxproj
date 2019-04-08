@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>include;..\..\GLAD\include;..\..\GLFW\include\;$(IncludePath)</IncludePath>
-    <LibraryPath>..\..\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <IncludePath>..\..\assimp-4.1.0\include\assimp;include;..\..\GLAD\include;..\..\GLFW\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>lib;..\..\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
     <SourcePath>src;$(SourcePath)</SourcePath>
     <IntDir>temp\$(Configuration)\</IntDir>
