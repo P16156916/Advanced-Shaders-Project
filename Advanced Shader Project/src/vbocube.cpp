@@ -70,7 +70,7 @@ VBOCube::VBOCube(float p_fVert, unsigned int shaderID)
 	//For everyface of the cubemap
 	for (GLuint iCount = 0; iCount < 6; iCount++) //load in textures 0-5 for cube map
 	{
-		string l_sTextureDir = "resources/images/cubemap/cubemap" + std::to_string(iCount) + ".jpg";
+		string l_sTextureDir = "resources/images/cubemap" + std::to_string(iCount) + ".jpg";
 		Bitmap bmp = Bitmap::bitmapFromFile(l_sTextureDir);
 		glTexImage2D(CubeMapFaces[iCount],
 			0,
