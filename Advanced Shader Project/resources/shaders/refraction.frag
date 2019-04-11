@@ -7,7 +7,7 @@ in vec3 Position;
 
 uniform vec3 cameraPos;
 uniform samplerCube skybox;
-uniform float ratio;
+uniform float ratio=0.65;
 
 void main() {
 	vec3 I = normalize(Position - cameraPos);
