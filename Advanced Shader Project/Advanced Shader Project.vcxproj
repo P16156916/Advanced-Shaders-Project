@@ -99,7 +99,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc140-d.lib;freetype281d.lib;freetype281.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -156,6 +156,7 @@
     <ClCompile Include="..\..\GLAD\src\glad.c" />
     <ClCompile Include="src\Bitmap.cpp" />
     <ClCompile Include="src\Camera.cpp" />
+    <ClCompile Include="src\Debugger.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\Shader.cpp" />
@@ -167,6 +168,7 @@
   <ItemGroup>
     <ClInclude Include="include\Bitmap.h" />
     <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\Debugger.h" />
     <ClInclude Include="include\Mesh.h" />
     <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\Shader.h" />
