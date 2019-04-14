@@ -20,7 +20,9 @@ public:
 	bool gammaCorrection;
 	Model(string path, bool gamma);
 	void Draw(Shader shader);
+	void Draw(Shader shader, unsigned int p_uiAmount);
 	vector<Mesh> getMesh();
+	void setUpInstancing();
 private:
 	/*  Functions   */
 	void loadModel(string path);

@@ -36,6 +36,7 @@ public:
 	/*  Functions  */
 	Mesh(vector<Vertex> vertices, vector<unsigned int> indices, vector<Texture> textures);
 	void Draw(Shader shader);
+	void Draw(Shader shader, unsigned int p_uiAmount);
 	unsigned int getVAO();
 private:
 	/*  Render data  */
