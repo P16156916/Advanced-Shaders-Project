@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -29,7 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -186,16 +186,29 @@
     <None Include="resources\shaders\directionalLighting.vert" />
     <None Include="resources\shaders\firstShader.frag" />
     <None Include="resources\shaders\firstShader.vert" />
+    <None Include="resources\shaders\fontShader.frag" />
+    <None Include="resources\shaders\fontShader.vert" />
     <None Include="resources\shaders\Lamp.frag" />
     <None Include="resources\shaders\Lamp.vert" />
     <None Include="resources\shaders\materialLighting.frag" />
     <None Include="resources\shaders\materialLighting.vert" />
     <None Include="resources\shaders\model.frag" />
     <None Include="resources\shaders\model.vert" />
+    <None Include="resources\shaders\modelGeo.frag" />
+    <None Include="resources\shaders\modelGeo.geo" />
+    <None Include="resources\shaders\modelGeo.vert" />
+    <None Include="resources\shaders\modelInstance.frag" />
+    <None Include="resources\shaders\modelInstance.vert" />
+    <None Include="resources\shaders\modelNormalMap.frag" />
+    <None Include="resources\shaders\modelNormalMap.vert" />
     <None Include="resources\shaders\multipleLighting.frag" />
     <None Include="resources\shaders\multipleLighting.vert" />
     <None Include="resources\shaders\pointLighting.frag" />
     <None Include="resources\shaders\pointLighting.vert" />
+    <None Include="resources\shaders\reflection.frag" />
+    <None Include="resources\shaders\reflection.vert" />
+    <None Include="resources\shaders\refraction.frag" />
+    <None Include="resources\shaders\refraction.vert" />
     <None Include="resources\shaders\sky.frag" />
     <None Include="resources\shaders\sky.vert" />
     <None Include="resources\shaders\spotLighting.frag" />

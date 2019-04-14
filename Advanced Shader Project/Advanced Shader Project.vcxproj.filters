@@ -85,10 +85,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\shaders\firstShader.frag">
+    <None Include="resources\shaders\basicLighting.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\firstShader.vert">
+    <None Include="resources\shaders\basicLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\Colours.frag">
@@ -97,16 +97,28 @@
     <None Include="resources\shaders\Colours.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
+    <None Include="resources\shaders\directionalLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\directionalLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\firstShader.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\firstShader.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\fontShader.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\fontShader.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
     <None Include="resources\shaders\Lamp.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\Lamp.vert">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="resources\shaders\basicLighting.frag">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="resources\shaders\basicLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\materialLighting.frag">
@@ -115,28 +127,31 @@
     <None Include="resources\shaders\materialLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\textureLighting.frag">
+    <None Include="resources\shaders\model.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\textureLighting.vert">
+    <None Include="resources\shaders\model.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\directionalLighting.frag">
+    <None Include="resources\shaders\modelGeo.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\directionalLighting.vert">
+    <None Include="resources\shaders\modelGeo.geo">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\pointLighting.frag">
+    <None Include="resources\shaders\modelGeo.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\pointLighting.vert">
+    <None Include="resources\shaders\modelInstance.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\spotLighting.frag">
+    <None Include="resources\shaders\modelInstance.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\spotLighting.vert">
+    <None Include="resources\shaders\modelNormalMap.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\modelNormalMap.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\multipleLighting.frag">
@@ -145,16 +160,40 @@
     <None Include="resources\shaders\multipleLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\model.frag">
+    <None Include="resources\shaders\pointLighting.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
-    <None Include="resources\shaders\model.vert">
+    <None Include="resources\shaders\pointLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\reflection.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\reflection.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\refraction.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\refraction.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\sky.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
     <None Include="resources\shaders\sky.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\spotLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\spotLighting.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\textureLighting.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\textureLighting.vert">
       <Filter>Resource Files\Shaders</Filter>
     </None>
   </ItemGroup>
